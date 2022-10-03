@@ -1,0 +1,5 @@
+- **`bcryptjs`: gera, criptografa e descriptografa a senha;**
+- **`connect-flash` e `express-flash`: para as _flash messages_;**
+- **`cookie-parser` e `cookie-session`: mantêm uma seção na máquina do usuário (faz o programa entender que o usuário está logado);**
+- **`express-session`: para termos a autenticação mais simples do express;**
+- **`session-file-store`: salva sessões e arquivos;**
