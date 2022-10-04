@@ -78,4 +78,13 @@ module.exports = class AuthController {
 
     }
 
+    static logout(req, res) {
+
+        // Removendo a sessão do sistema
+        req.session.destroy();
+
+        res.redirect("/login");
+
+    }
+
 };
