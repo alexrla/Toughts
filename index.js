@@ -9,6 +9,10 @@ dotenv.config();
 
 const conn = require("./db/conn");
 
+// Models
+const Tought = require("./models/Tought");
+const User = require("./models/User");
+
 const app = express();
 
 app.engine("handlebars", exphbs.engine());
@@ -76,6 +80,7 @@ app.use((req, res, next) => {
 });
 
 conn
+    //.sync({ force: true })
     .sync()
     .then(() => {
 
