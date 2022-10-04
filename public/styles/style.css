@@ -167,3 +167,22 @@ form input[type="submit"]:hover,
 
     color: #FFF;
 } 
+
+/* Flash messages */
+.message {
+    background-color: #CCE5FF;
+
+    border: 1px solid #B8DAFF;
+
+    border-radius: 5px;
+
+    color: #004085;
+
+    margin: 0 auto 2em;
+
+    max-width: 60%;
+
+    padding: 1em;
+
+    text-align: center;
+}
