@@ -73,7 +73,7 @@ app.use(
 // Flash messages
 app.use(flash());
 
-// COnfigurando a sessão na resposta
+// Configurando a sessão na resposta
 app.use((req, res, next) => {
 
     if(req.session.userId)  {

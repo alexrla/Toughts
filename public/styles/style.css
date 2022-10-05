@@ -186,3 +186,28 @@ form input[type="submit"]:hover,
 
     text-align: center;
 }
+
+/* Dashboard */
+.tought-form-container a {
+    color: #F6982D;
+}
+
+.tought-form-container a:hover {
+    color: #FFF;
+}
+
+.tought-form-container h2 {
+    border-left: 4px solid #F6982D;
+
+    color: #FFF;
+
+    margin-bottom: 1em;
+
+    padding: .6em;
+}
+
+.tought-form-container form {
+    margin-top: 1.5em;
+    
+    max-width: 30%;
+}

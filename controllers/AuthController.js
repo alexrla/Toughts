@@ -17,7 +17,7 @@ module.exports = class AuthController {
         // Verificar se o usuário existe e se a senha está correta
         const user = await User.findOne({ where: { email: email }});
 
-        if(user === null) {
+        if(!user) {
 
             req.flash("message", "E-mail não encontrado!");
 
@@ -42,7 +42,7 @@ module.exports = class AuthController {
         // Inicializando a sessão
         req.session.userId = user.id;
 
-        req.flash("message", "Seja bem-vindo!");
+        req.flash("message", `Seja bem-vindo, ${user.name}!`);
 
         req.session.save(() => {
 
@@ -99,10 +99,10 @@ module.exports = class AuthController {
 
         try {
 
-            const createrdUser = await User.create(user);
+            const createdUser = await User.create(user);
 
             // Inicializando a sessão
-            req.session.userId = createrdUser.id;
+            req.session.userId = createdUser.id;
 
             req.flash("message", "Conta criada com sucesso!");
 
