@@ -19,4 +19,9 @@
             </li>
         {{/each}}
     </ul>
+    {{#if emptyToughts}}
+        <p>
+            Você ainda não cadastrou seus pensamentos. Comece <a href="/toughts/add" class="link">por aqui!</a>
+        </p>
+    {{/if}}
 </div>
